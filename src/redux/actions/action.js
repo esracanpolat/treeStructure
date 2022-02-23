@@ -13,12 +13,6 @@ export const setNewChildRoot = (data) => {
     }
 }
 
-export const setOpenModal = (visible) => {
-    return {
-        type: "Visible_Modal",
-        payload: visible,
-    }
-}
 
 export const deleteRoot = (id) => {
     return {

@@ -53,6 +53,8 @@ export default function Home() {
                                         key={data.id}
                                         label={
                                             <div style={{
+                                                marginLeft: 20,
+                                                marginRight: 20,
                                                 width: "auto",
                                                 padding: "10px",
                                                 backgroundColor: "#32323221",

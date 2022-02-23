@@ -16,13 +16,12 @@ export const treeReducer = (state = initialState, action) => {
                 visible: false
             }
         case "DELETE_ROOT":
-            const filteredTodos = state.todos.filter(todo => todo.id !== action.payload)
+            const filteredTodos = state.Root.filter(todo => todo.id !== action.payload)
             return {
                 ...state,
                 Root: filteredTodos
             }
         case "ADD_CHILD_ROOT":
-            // const filteredTodos = state.todos.filter(todo => todo.id !== action.payload)
             return {
                 ...state,
                 ChildRoot: [action.payload, ...state.ChildRoot]
