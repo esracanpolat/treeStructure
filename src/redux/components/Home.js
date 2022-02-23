@@ -125,7 +125,7 @@ export default function Home() {
                                                             <a data-toggle="collapse"
                                                                 onClick={() => setVisible(!visible)}
                                                                 aria-controls={ChildData.id} aria-expanded={visible}
-                                                            ><HiOutlineDotsVertical style={{ fontSize: "20px" }} /></a>
+                                                            ><HiOutlineDotsVertical style={{ fontSize: "20px", marginRight: 20 }} /></a>
                                                             <Fade in={visible}>
                                                                 <div
                                                                     id={ChildData.id}
