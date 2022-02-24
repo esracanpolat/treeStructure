@@ -3,7 +3,7 @@ import { Formik, Form, Field } from 'formik';
 import { Tree, TreeNode } from 'react-organizational-chart';
 import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { setOpenModal, setNewRoot, setNewChildRoot, deleteRoot } from '../actions/action';
+import { setOpenModal, setNewRoot, setNewChildRoot, deleteRoot, deleteChildRoot } from '../actions/action';
 import { HiOutlineDotsVertical } from "react-icons/hi";
 import { CgProfile } from "react-icons/cg";
 import { Button, Col, Modal, Row, Collapse, Fade } from 'react-bootstrap';
