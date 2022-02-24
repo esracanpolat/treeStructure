@@ -125,7 +125,7 @@ export default function Home() {
                                                             <a data-toggle="collapse"
                                                                 onClick={() => setVisible(!visible)}
                                                                 aria-controls={ChildData.id} aria-expanded={visible}
-                                                            ><HiOutlineDotsVertical style={{ fontSize: "20px", marginRight: 20 }} /></a>
+                                                            ><HiOutlineDotsVertical style={{ fontSize: "20px" }} /></a>
                                                             <Fade in={visible}>
                                                                 <div
                                                                     id={ChildData.id}
@@ -138,7 +138,7 @@ export default function Home() {
                                                                     }}>
                                                                     <a style={{ cursor: "pointer" }} onClick={() => { setParentID(ChildData.id); setAddModal(true) }}>Add a downline</a>
                                                                     <hr />
-                                                                    <a style={{ cursor: "pointer" }} onClick={() => dispatch(deleteRoot(ChildData.id))}>Delete</a>
+                                                                    <a style={{ cursor: "pointer" }} onClick={() => dispatch(deleteChildRoot(ChildData.id))}>Delete</a>
                                                                     <hr />
                                                                     <a>Request income</a>
                                                                 </div>

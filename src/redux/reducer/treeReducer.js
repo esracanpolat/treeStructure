@@ -21,6 +21,12 @@ export const treeReducer = (state = initialState, action) => {
                 ...state,
                 Root: filteredTodos
             }
+        case "DELETE_CHILD_ROOT":
+            const todos = state.ChildRoot.filter(todo => todo.id !== action.payload)
+            return {
+                ...state,
+                ChildRoot: todos
+            }
         case "ADD_CHILD_ROOT":
             return {
                 ...state,

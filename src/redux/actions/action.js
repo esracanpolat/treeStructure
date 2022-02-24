@@ -14,6 +14,12 @@ export const setNewChildRoot = (data) => {
 }
 
 
+export const deleteChildRoot = (id) => {
+    return {
+        type: "DELETE_CHILD_ROOT",
+        payload: id,
+    }
+}
 export const deleteRoot = (id) => {
     return {
         type: "DELETE_ROOT",
